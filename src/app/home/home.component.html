@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="toDos-container">
+    <!-- Print Todos from array list -->
+    <h1>To Do's</h1>
+    <hr>
+    <!-- Loop through the array -->
+    <ul *ngFor="let toDo of list; index as i" class="list">
+      <li>{{ toDo }}</li>
+      <!-- Delete specific todo from localstorage -->
+      <button class="delete-btn" (click)="removeToDo(i, 1)">Delete</button>
+    </ul>
+  </div>
+  <!-- Input field for new todos -->
+  <div class="input-toDos">
+    <h1>New To Do's</h1>
+    <hr>
+    <input [(ngModel)]="newToDo" type=" text" placeholder="Insert New To Do" required>
+    <!-- Save todos in localstorage -->
+    <button type="button" class="input-btn" (click)="saveLocal()">Save</button>
+  </div>
+</div>

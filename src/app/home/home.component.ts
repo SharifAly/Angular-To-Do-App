@@ -11,6 +11,10 @@ export class HomeComponent implements OnInit {
   // list is empty string where i push the value from newToDO
   list: string[] = [];
 
+  // Boolean
+
+  status: boolean = false;
+
   // Get the toDoList from localstorage
   toDoList = (this.list = JSON.parse(localStorage.getItem('toDos')!));
 

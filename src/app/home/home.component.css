@@ -6,6 +6,13 @@
   justify-content: space-around;
 }
 
+/* Done or Not Done */
+
+.success {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
 /* Left list container of todos */
 
 .toDos-container {
@@ -30,6 +37,7 @@
   font-size: 1.3rem;
   list-style: none;
   text-shadow: 0 0 2px white;
+  cursor: pointer;
 }
 
 ul {
@@ -172,7 +180,7 @@ input {
     position: relative;
     width: 90vw;
     height: 30rem;
-    margin: .5rem 0 4rem 0;
+    margin: 0 0 4rem 0;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.1);
